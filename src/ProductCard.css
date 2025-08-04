@@ -1,0 +1,87 @@
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  width: 100%; /* make sure card fills grid cell */
+}
+
+.image-wrapper {
+  position: relative;
+  width: 90%;
+}
+
+.product-img {
+  width: 100%; /* fill full width */
+  height: 250px; /* fixed height */
+  object-fit: cover;
+  border-radius: 10px; /* subtle rounded corners like the design */
+  display: block;
+}
+
+.selected-img {
+  border: 3px solid hsl(14, 86%, 42%); /* thin red border when selected */
+}
+
+
+.add-btn,
+.quantity-control {
+  position: absolute;
+  bottom: 10px; /* inside image */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.add-btn {
+  background: white;
+  border: 1px solid hsl(14, 86%, 42%);
+  color: hsl(14, 86%, 42%);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.add-btn:hover {
+  background: hsl(14, 86%, 42%);
+  color: white;
+}
+
+.quantity-control {
+  background: hsl(14, 86%, 42%);
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 4px 20px;
+  color: white;
+}
+.quantity-control button {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.quantity-control span {
+  margin: 0 8px;
+  font-weight: bold;
+}
+.quantity-control button:hover {
+  background: white;
+  color: hsl(14, 86%, 42%);
+}
+
+.category {
+  font-size: 0.9em;
+  color: hsl(12, 20%, 44%);
+  margin-top: 20px;
+}
+.name {
+  margin: 5px 0;
+}
+.price {
+  color: hsl(14, 86%, 42%);
+  font-weight: bold;
+}
